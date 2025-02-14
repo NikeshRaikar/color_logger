@@ -1,13 +1,6 @@
 import logging
 import json
 
-
-file = open('D:\\AT-Test\\automation_framework\\data.json')
-data = json.load(file)
-trgt_sw = data['Base_Target']["TS"]
-bs_sw = data['Base_Target']["BS0"]
-
-
 class CustomFormatter(logging.Formatter):
 
     grey = "\x1b[38;20m"
