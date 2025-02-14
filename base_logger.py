@@ -43,12 +43,7 @@ def get_logger(name, level=''):
     console_handler.setFormatter(CustomFormatter())
     logger.addHandler(console_handler)
 
-    # file_handler = logging.FileHandler(f"../../automation_testframework/ORU_.log", mode="a", encoding="utf-8")
-    # file_handler.setLevel(level)
-    # file_handler.setFormatter(formatter)
-    # logger.addHandler(file_handler)
-
-    file_handler = logging.FileHandler(f"../../automation_testframework/Logs/STDOUT/ORU_.log", mode="a", encoding="utf-8")
+    file_handler = logging.FileHandler("file_path.log", mode="a", encoding="utf-8")
     file_handler.setLevel(level)
     file_handler.setFormatter(CustomFormatter())
     logger.addHandler(file_handler)
